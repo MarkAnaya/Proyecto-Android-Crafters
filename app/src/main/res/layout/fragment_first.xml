@@ -27,7 +27,11 @@
         android:text="Ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+ Viviana
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+ dev
 
     <TextView
         android:id="@+id/textView3"
@@ -42,6 +46,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+ Viviana
         android:id="@+id/editTextTextPassword2"
         android:layout_width="0dp"
         android:layout_height="40dp"
@@ -68,4 +73,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:text="Correo:" />
+
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Correo:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:text="Contraseña:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+ dev
 </androidx.constraintlayout.widget.ConstraintLayout>
