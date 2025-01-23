@@ -1,6 +1,7 @@
 package com.example.proyectoandroidcrafters
 
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -9,7 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.proyectoandroidcrafters.databinding.ActivityLoginOrRegisterBinding
 
-class LoginOrRegister : AppCompatActivity() {
+class LoginOrRegister : AppCompatActivity(), FragmentCommunicator {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityLoginOrRegisterBinding
@@ -20,22 +21,16 @@ class LoginOrRegister : AppCompatActivity() {
         binding = ActivityLoginOrRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
 
-        val navController = findNavController(R.id.nav_host_fragment_content_login_or_register)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+    }
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
-                .setAnchorView(R.id.fab).show()
+    override fun manageLoader(isVisible: Boolean) {
+        if (isVisible) {
+            binding.loaderView.visibility = View.VISIBLE
+        } else {
+            binding.loaderView.visibility = View.GONE
         }
+        // binding.loaderView.visibility = if (isVisible) View.VISIBLE else View.GONE
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_login_or_register)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
-    }
 }
