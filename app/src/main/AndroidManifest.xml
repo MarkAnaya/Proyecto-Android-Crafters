@@ -13,9 +13,12 @@
         android:theme="@style/Theme.ProyectoAndroidCrafters"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProyectoAndroidCrafters" />
+        <activity
+            android:name=".LoginOrRegister"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.ProyectoAndroidCrafters">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ProyectoAndroidCrafters"></activity>
     </application>
 
 </manifest>
