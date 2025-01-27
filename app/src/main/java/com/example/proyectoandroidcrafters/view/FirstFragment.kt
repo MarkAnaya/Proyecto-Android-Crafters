@@ -1,4 +1,4 @@
-package com.example.proyectoandroidcrafters
+package com.example.proyectoandroidcrafters.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.proyectoandroidcrafters.R
 import com.example.proyectoandroidcrafters.databinding.FragmentFirstBinding
+import com.example.proyectoandroidcrafters.utils.FragmentCommunicator
 
 
 class FirstFragment : Fragment() {
@@ -25,9 +27,14 @@ class FirstFragment : Fragment() {
         binding.ingresarButton.setOnClickListener {
             communicator.manageLoader(true)
         }
+        binding.RegisterTextView.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
         return binding.root
 
     }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

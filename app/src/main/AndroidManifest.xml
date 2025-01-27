@@ -13,11 +13,11 @@
         android:theme="@style/Theme.ProyectoAndroidCrafters"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
+            android:name=".view.HomeActivity"
             android:exported="false"
             android:theme="@style/Theme.ProyectoAndroidCrafters" />
         <activity
-            android:name=".LoginOrRegister"
+            android:name=".view.LoginOrRegister"
             android:exported="true"
             android:theme="@style/Theme.ProyectoAndroidCrafters">
             <intent-filter>
