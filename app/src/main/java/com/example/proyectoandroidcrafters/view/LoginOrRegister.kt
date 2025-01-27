@@ -1,14 +1,11 @@
-package com.example.proyectoandroidcrafters
+package com.example.proyectoandroidcrafters.view
 
 import android.os.Bundle
 import android.view.View
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.proyectoandroidcrafters.databinding.ActivityLoginOrRegisterBinding
+import com.example.proyectoandroidcrafters.utils.FragmentCommunicator
 
 class LoginOrRegister : AppCompatActivity(), FragmentCommunicator {
 

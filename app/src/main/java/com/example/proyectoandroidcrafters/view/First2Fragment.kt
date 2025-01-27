@@ -1,4 +1,4 @@
-package com.example.proyectoandroidcrafters
+package com.example.proyectoandroidcrafters.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.proyectoandroidcrafters.R
 import com.example.proyectoandroidcrafters.databinding.FragmentFirst2Binding
 
 /**
@@ -32,7 +33,7 @@ class First2Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
+        binding.AddActivityImageButton.setOnClickListener {
             findNavController().navigate(R.id.action_First2Fragment_to_Second2Fragment)
         }
     }
