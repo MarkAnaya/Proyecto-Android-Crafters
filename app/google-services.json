@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "864311652085",
+    "project_id": "android-crafters",
+    "storage_bucket": "android-crafters.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864311652085:android:7947f871d8993d6f851fbc",
+        "android_client_info": {
+          "package_name": "com.example.proyectoandroidcrafters"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPJ4tY5eVno0KHx8zjJG87WqPpbR9Mj_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
